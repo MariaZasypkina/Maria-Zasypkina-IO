@@ -1,40 +1,159 @@
 <!DOCTYPE html>
 <!-- Declare the document type -->
 <html lang="en">
-  <!-- Specify the language of the document -->
+<!-- Specify the language of the document -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Setting the viewport to make your website look good on all devices -->
   <head>
-    <meta charset="UTF-8" />
-    <!--Define the character encoding-->
     <title>Maria Zasypkina's Portfolio Website</title>
     <!--Set the title of the webpage-->
+    <meta charset="UTF-8" />
+    <!--Define the character encoding-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> 
+    <!--Define the font-->
+    <style>
+
+      header{ 
+        /* Set the header background image */
+        background-image: url('https://i.postimg.cc/xdJWVQnf/temp-Imageu-FSpoz.avif');
+        /* Stretch the image to cover the entire header without maintaining aspect ratio */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
+        /* Set the width of the header to span the entire width of the page */
+        width: 100%;
+      }
+
+      body {
+        /* Set the background color and font of the page */
+        background-color: rgb(242, 220, 197);
+        font-family: 'Roboto Slab', serif;
+      }
+      h1 {
+        /* Set the style of a h1 header */
+        display: flex;
+        justify-content: center;
+        letter-spacing: 3px;
+        background-color: rgb(223, 76, 8);
+        color: beige;
+        padding: 10px;
+        font-size: large;
+      }
+      h1:hover{
+        /* Set the style of a h1 header upon hovering */
+        padding: 6%;
+        letter-spacing: 10px;
+        font-weight: bold;
+        font-size: 200%;
+        background-color:rgb(32, 179, 247)
+      }
+
+      h3 {
+        /* Set the style of a h3 header */
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+        font-size: large;
+        letter-spacing: 3px;
+        background-color: rgb(223, 226, 173);
+        color:rgb(32, 29, 82);
+        padding: 20px;
+      }
+
+      h3:hover{
+        /* Set the style of a h3 header upon hovering */
+        font-weight: bold;
+        font-size: 200%;
+        letter-spacing: 10px;
+        background-color: rgb(32, 29, 82);
+        color:rgb(223, 226, 173);
+        padding: 6%;
+      }
+
+      p {
+        /* Set the font color of a paragraph */
+        color: rgb(32, 29, 82);
+      }
+      nav {
+        /* Set the style of a navigation menu */
+        display: flex;
+        justify-content: center;
+        letter-spacing: 3px;
+        background-color:  rgb(52, 83, 234);
+        padding: 10px;
+      }
+
+      nav a{
+        color: white; /* Added color for nav links */
+        font-size: large; /* Large font size*/
+        font-weight: bold;
+        text-decoration: none; /* Remove underline */
+        padding: 10px; /* Add padding */
+      }
+
+      nav a:hover{
+        /* Set the style of a navigation menu upon hovering */
+        background-color: rgb(223, 226, 173);
+        color:black;
+        letter-spacing: 10px;
+        font-size: 150%;
+        padding: 10px;
+      }
+
+    </style>
   </head>
 
   <body> 
+    <header></header>
     <!-- Adding content to the page-->
     <h1>Maria Zasypkina</h1>
-    <h2>About</h2>
-    <p>
-      I'm passionate and creative future web developer. I enjoy learning new
-      technologies and getting new professional skills
-    </p>
+
+    <section id="Slogan"> <!-- Adding Slogan Section-->
+    <h3>Blending Artistry with Code</h3>
+    </section>
+
+    <nav>  <!-- Adding Navigation Bar -->
+      <a href="#About">About me</a>
+      <a href="#Experience">My Experience</a>
+      <a href="#Connect">Contact Me</a>
+    </nav>
+
+   
+    <section id="About"> <!-- Adding About section-->
+      <h2>About</h2>
+      <p>
+        Hello there! I'm Maria Zasypkina, a web developer who combines creativity with precision. 
+        I can create beautiful and functional websites for any taste and color. 
+        With a background in software testing and a passion for art, I bring a unique perspective to every project. 
+        Always eager to learn new technologies and skills, I'm ready to tackle any challenge that comes my way.  
+      </p>
+    </section>
+
+  <section id = "Experience"> <!-- Adding Experience Section-->
     <h2>Experience</h2>
     <ul>
       <li>
-        Web Developer: Code The Dream Intro to Programming. Final API project
-        (current)
+        Web Developer: Code The Dream Intro to Programming. Final API project     
       </li>
       <li>
         Web Developer: Code The Dream Intro to Programming. Portfolio Website
-        (current)
       </li>
       <li> Software Tester: SDL
       </li>
+      <li> Program Manager: Artektour CCUSA
+      </li>
     </ul>
+  </section>
+
+  <section id = "Connect"> <!-- Adding Connect Section-->
     <h2>Connect</h2>
     <ul>
       <li>email: <a href = "mailto:maria.zasypkina@gmail.com">maria.zasypkina@gmail.com</a></li>
-      <li>github: <a href="https://github.com/MariaZasypkina"> My GitHub Profile</li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/maria-zasypkina"> My LinkedIn Page</li>
+      <li>github: <a href="https://github.com/MariaZasypkina"> My GitHub Profile</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/maria-zasypkina"> My LinkedIn Page</a></li>
     </ul>
+  </section>
+
   </body>
 </html>
