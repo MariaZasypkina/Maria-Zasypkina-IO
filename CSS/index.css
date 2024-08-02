@@ -111,9 +111,9 @@ h3:hover,
 h4:hover,
 h5:hover,
 h6:hover,
-#Experience li:hover,
-#Connect li:hover, 
-#Skills li:hover {
+#experience li:hover,
+#connect li:hover, 
+#skills li:hover {
   box-shadow: 0 0 35px white;
 }
 
@@ -144,19 +144,19 @@ nav a:hover {
   box-shadow: 0 0 25px white;
 }
 
-#Experience ul {
+#experience ul {
   list-style: none;
   padding: 0;
   width: 98%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   font-size: larger;
   text-align: center;
 }
 
-#Experience li {
+#experience li {
   margin: 10px 0;
   padding: 10px 20px;
   border-radius: 25px;
@@ -165,13 +165,13 @@ nav a:hover {
   position: relative;
   background: rgba(223, 226, 173, 0.3);
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  align-items:center;
+  flex-direction:column;
   justify-content: flex-start;
 }
 
 
-#Experience li::before {
+#experience li::before {
   content: "";
   background-size:cover;
   background-position:center;
@@ -181,28 +181,28 @@ nav a:hover {
   margin-right: 10px;
   border: 5px solid rgba(48, 48, 85, 0.1);
   border-radius: 25px;
-  display: inline-block;
+  display:inline-table;
 }
-  #Experience li[data-icon="ctd"]::before {
+  #experience li[data-icon="ctd"]::before {
   background-image: url("https://i.postimg.cc/s22FfV4w/temp-Image-TPv-QGE.avif");
   }
-  #Experience li[data-icon="sdl"]::before {
+  #experience li[data-icon="sdl"]::before {
     background-image: url("https://i.postimg.cc/htsWqJTX/temp-Image-RTSI8-C.avif");
   }
-  #Experience li[data-icon="kodeploy"]::before {
+  #experience li[data-icon="kodeploy"]::before {
     background-image: url("https://i.postimg.cc/HkdDK0cG/temp-Image-MMo-Kpo.avif");
   }
-  #Experience li[data-icon="ccusa"]::before {
+  #experience li[data-icon="ccusa"]::before {
     background-image: url("https://i.postimg.cc/JhYfG9Tm/temp-Imagewq1v-Q5.avif");
     }
-  #Experience li[data-icon="technomol"]::before {
+  #experience li[data-icon="technomol"]::before {
       background-image: url("https://i.postimg.cc/V6S3MDTt/temp-Imageqy-RGXE.avif");
     }
-  #Experience li[data-icon="msn"]::before {
+  #experience li[data-icon="msn"]::before {
       background-image: url("https://i.postimg.cc/TwZBcnM4/temp-Imagefe-LM2-O.avif");
     }
 
-#Skills ul {
+#skills ul {
   list-style: none;
   padding: 0;
   width: 100%;
@@ -214,7 +214,7 @@ nav a:hover {
   text-align: center;
 }
 
-#Skills li {
+#skills li {
   margin: 10px 0;
   padding: 30px;
   border-radius: 25px;
@@ -228,7 +228,7 @@ nav a:hover {
   justify-content: center;
 }
 
-#Connect ul {
+#connect ul {
   list-style: none;
   padding: 0;
   width: 90%;
@@ -238,7 +238,7 @@ nav a:hover {
   gap: 20px;
   text-align: center;
 }
-#Connect li {
+#connect li {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -252,7 +252,7 @@ nav a:hover {
   background: rgba(223, 226, 173, 0.1);
   letter-spacing: 3px;
 }
-#Connect li a {
+#connect li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,7 +263,7 @@ nav a:hover {
   font-weight: bold;
   text-decoration: none;
 }
-#Connect li::before {
+#connect li::before {
   content: "";
   background-size: contain;
   background-repeat: no-repeat;
@@ -271,12 +271,12 @@ nav a:hover {
   height: 3em;
 
 }
-#Connect li[data-icon="email"]::before {
+#connect li[data-icon="email"]::before {
 background-image: url("https://i.postimg.cc/P51dwFmw/4202011-email-gmail-mail-logo-social-icon.png");
 }
-#Connect li[data-icon="github"]::before {
+#connect li[data-icon="github"]::before {
   background-image: url("https://i.postimg.cc/bdXRSJhk/github-mark.png");
 }
-#Connect li[data-icon="linkedin"]::before {
+#connect li[data-icon="linkedin"]::before {
   background-image: url("https://i.postimg.cc/J0HqhX9R/317750-linkedin-icon.png");
 }
