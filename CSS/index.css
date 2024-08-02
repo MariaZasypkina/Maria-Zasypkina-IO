@@ -1,0 +1,282 @@
+header {
+  /* Set the header background image */
+  background-image: url("https://i.postimg.cc/W4X6wVrF/temp-Imagep-JLXa-T.avif");
+  /* Stretch the image to cover the entire header */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  /* Set the background color and font of the page */
+  background-image: url("https://i.postimg.cc/VNyxshqJ/temp-Image9-Jcv5-E.avif");
+  font-family: "Roboto Slab", serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: larger;
+  font-weight: lighter;
+}
+h1 {
+  /* Set the style of a h1 header */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+  background-color: rgb(241, 139, 101);
+  color: rgb(222, 223, 209);
+  padding: 10px;
+  font-size: 200%;
+}
+h1:hover {
+  /* Set the style of a h1 header upon hovering */
+  letter-spacing: 10px;
+  font-weight: bold;
+  font-size: 200%;
+  box-shadow: 0 0 45px white;
+}
+h2 {
+  /* Set the style of a h3 header */
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: large;
+  letter-spacing: 3px;
+  background-color: rgb(223, 226, 173);
+  color: rgb(32, 29, 82);
+  padding: 20px;
+}
+
+h2:hover {
+  /* Set the style of a h3 header upon hovering */
+  font-weight: bold;
+  font-size: 150%;
+  letter-spacing: 10px;
+  background-color: rgb(32, 29, 82);
+  color: rgb(223, 226, 173);
+  box-shadow: 0 0 45px white;
+}
+h3 {
+  /* Set the style of a navigation menu */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  background-color: rgb(69, 132, 242);
+  padding: 10px;
+  color: rgb(48, 48, 85);
+  font-size: larger;
+  border: 5px ridge rgba(48, 48, 85, 0.5);
+  box-shadow: 0 0 15px white;
+}
+
+h4 {
+  /* Set the style of a navigation menu */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  background-color: rgb(241, 139, 101);
+  padding: 10px;
+  color: rgb(48, 48, 85);
+  font-size: larger;
+  border: 5px ridge rgba(48, 48, 85, 0.5);
+  box-shadow: 0 0 15px white;
+}
+
+h5 {
+  /* Set the style of a navigation menu */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  background-color: rgb(223, 226, 173);
+  padding: 10px;
+  color: rgb(48, 48, 85);
+  font-size: larger;
+  border: 5px ridge rgba(48, 48, 85, 0.5);
+  box-shadow: 0 0 15px white;
+}
+
+h6 {
+  /* Set the style of a navigation menu */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  background-color: rgb(155, 66, 67);
+  padding: 10px;
+  color: rgb(48, 48, 85);
+  font-size: larger;
+  border: 5px ridge rgba(48, 48, 85, 0.5);
+  box-shadow: 0 0 15px white;
+}
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+#experience li:hover,
+#connect li:hover, 
+#skills li:hover {
+  box-shadow: 0 0 35px white;
+}
+
+nav {
+  /* Set the style of a navigation menu */
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  background-color: rgb(69, 132, 242);
+  padding: 10px;
+}
+
+nav a {
+  color: white; /* Added color for nav links */
+  font-size: large; /* Large font size*/
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  padding: 20px; /* Add padding */
+}
+
+nav a:hover {
+  /* Set the style of a navigation menu upon hovering */
+  background-color: rgb(223, 226, 173);
+  color: black;
+  letter-spacing: 10px;
+  font-size: 150%;
+  padding: 10px;
+  box-shadow: 0 0 25px white;
+}
+
+#experience ul {
+  list-style: none;
+  padding: 0;
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-size: larger;
+  text-align: center;
+}
+
+#experience li {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px white;
+  border: 5px solid rgba(48, 48, 85, 0.5);
+  position: relative;
+  background: rgba(223, 226, 173, 0.3);
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content: flex-start;
+}
+
+
+#experience li::before {
+  content: "";
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 9em;
+  height: 3em;
+  margin-right: 10px;
+  border: 5px solid rgba(48, 48, 85, 0.1);
+  border-radius: 25px;
+  display:inline-table;
+}
+  #experience li[data-icon="ctd"]::before {
+  background-image: url("https://i.postimg.cc/s22FfV4w/temp-Image-TPv-QGE.avif");
+  }
+  #experience li[data-icon="sdl"]::before {
+    background-image: url("https://i.postimg.cc/htsWqJTX/temp-Image-RTSI8-C.avif");
+  }
+  #experience li[data-icon="kodeploy"]::before {
+    background-image: url("https://i.postimg.cc/HkdDK0cG/temp-Image-MMo-Kpo.avif");
+  }
+  #experience li[data-icon="ccusa"]::before {
+    background-image: url("https://i.postimg.cc/JhYfG9Tm/temp-Imagewq1v-Q5.avif");
+    }
+  #experience li[data-icon="technomol"]::before {
+      background-image: url("https://i.postimg.cc/V6S3MDTt/temp-Imageqy-RGXE.avif");
+    }
+  #experience li[data-icon="msn"]::before {
+      background-image: url("https://i.postimg.cc/TwZBcnM4/temp-Imagefe-LM2-O.avif");
+    }
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: larger;
+  text-align: center;
+}
+
+#skills li {
+  margin: 10px 0;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px white;
+  border: 5px solid rgba(48, 48, 85, 0.5);
+  position: relative;
+  background: rgba(223, 226, 173, 0.1);
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#connect ul {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+#connect li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px white;
+  border: 5px solid rgba(48, 48, 85, 0.5);
+  position: relative;
+  background: rgba(223, 226, 173, 0.1);
+  letter-spacing: 3px;
+}
+#connect li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+}
+#connect li::before {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3em;
+  height: 3em;
+
+}
+#connect li[data-icon="email"]::before {
+background-image: url("https://i.postimg.cc/P51dwFmw/4202011-email-gmail-mail-logo-social-icon.png");
+}
+#connect li[data-icon="github"]::before {
+  background-image: url("https://i.postimg.cc/bdXRSJhk/github-mark.png");
+}
+#connect li[data-icon="linkedin"]::before {
+  background-image: url("https://i.postimg.cc/J0HqhX9R/317750-linkedin-icon.png");
+}
